@@ -23,7 +23,6 @@
             android:layout_weight="0.5" />
 
         <TextView
-            android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -36,35 +35,14 @@
             android:layout_height="0dp"
             android:layout_weight="0.3" />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/shownRoots"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="4.5"
-                android:gravity="center"
-                android:text="X1 = ???"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="4.5"
-                android:gravity="center"
-                android:text="X2 = ???"
-                android:textSize="18sp" />
-        </LinearLayout>
+            android:gravity="center"
+            android:text="X1 = ??? and X2 = ???"
+            android:textSize="18sp" />
 
         <Space
             android:layout_width="match_parent"
@@ -72,6 +50,7 @@
             android:layout_weight="0.5" />
 
         <WebView
+            android:id="@+id/wV"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="5" />
@@ -81,12 +60,12 @@
             android:layout_height="0dp"
             android:layout_weight="0.5" />
 
-        <ImageButton
-            android:id="@+id/imageButton"
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#00FFFFFF"
-            tools:srcCompat="@drawable/return_icon" />
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:onClick="returnMain"
+            app:srcCompat="@drawable/return_icon" />
 
         <Space
             android:layout_width="match_parent"

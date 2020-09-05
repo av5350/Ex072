@@ -23,12 +23,11 @@
             android:layout_weight="5" />
 
         <TextView
-            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="4"
             android:gravity="center"
-            android:text="Enter the values of the a,b, c of the quadratic equation "
+            android:text="Enter the values of the a,b, c of the quadratic equation: ax^2 + bx + c = 0 "
             android:textSize="18sp" />
 
         <LinearLayout
@@ -38,7 +37,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/editTextNumberSigned"
+                android:id="@+id/aValue"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -50,11 +49,11 @@
 
             <Space
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_height="match_parent"
+                android:layout_weight="0.3" />
 
             <EditText
-                android:id="@+id/editTextNumberSigned2"
+                android:id="@+id/bValue"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -66,11 +65,11 @@
 
             <Space
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_height="match_parent"
+                android:layout_weight="0.3" />
 
             <EditText
-                android:id="@+id/editTextNumberSigned3"
+                android:id="@+id/cValue"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -85,7 +84,7 @@
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2" />
+            android:layout_weight="1" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -103,6 +102,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="4"
                 android:fontFamily="casual"
+                android:onClick="randomNums"
                 android:text="random"
                 android:textColor="#0B0909"
                 android:textStyle="bold" />
@@ -111,7 +111,7 @@
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2" />
+            android:layout_weight="1" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -129,6 +129,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="5"
                 android:fontFamily="casual"
+                android:onClick="getValues"
                 android:text="solve"
                 android:textStyle="bold" />
 
@@ -144,12 +145,13 @@
             android:layout_weight="2" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/shownRoots"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="4"
-            android:text="The answers are:"
-            android:textSize="24sp" />
+            android:layout_weight="6"
+            android:gravity="center_horizontal"
+            android:text="No solution for now..."
+            android:textSize="18sp" />
 
         <Space
             android:layout_width="match_parent"
