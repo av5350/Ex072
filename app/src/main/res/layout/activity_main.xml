@@ -25,10 +25,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="4"
+            android:layout_weight="5"
             android:gravity="center"
             android:text="Enter the values of the a,b, c of the quadratic equation: ax^2 + bx + c = 0 "
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -151,7 +151,7 @@
             android:layout_weight="6"
             android:gravity="center_horizontal"
             android:text="No solution for now..."
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <Space
             android:layout_width="match_parent"

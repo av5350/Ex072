@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         {
             Toast.makeText(this, "Enter a number in each cell!", Toast.LENGTH_SHORT).show();
         }
-        else if (Float.parseFloat(aString) == 0){
+        else if (Float.parseFloat(aString) == 0.0){
             Toast.makeText(this, "a cannot be equal to 0!", Toast.LENGTH_SHORT).show();
         }
         else {
@@ -73,9 +73,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void randomNums(View view) {
         // generate random values to the a,b,c text boxs
-        // 9999999 -> the highest value that can shown in the tV without problems
-        aValue.setText("" + rnd.nextInt(9999999));
-        bValue.setText("" + rnd.nextInt(9999999));
-        cValue.setText("" + rnd.nextInt(9999999));
+        // 999999 -> the highest value that can shown in the tV without problems
+        aValue.setText("" + rnd.nextInt(999999));
+        bValue.setText("" + rnd.nextInt(999999));
+        cValue.setText("" + rnd.nextInt(999999));
     }
 }
