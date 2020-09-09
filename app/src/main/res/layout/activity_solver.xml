@@ -28,7 +28,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="The solutions of the quadratic equation are:"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
 
         <Space
             android:layout_width="match_parent"
