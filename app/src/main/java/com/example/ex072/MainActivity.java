@@ -72,10 +72,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void randomNums(View view) {
-        // generate random values to the a,b,c text boxs
-        // 999999 -> the highest value that can shown in the tV without problems
-        aValue.setText("" + (Double.MIN_VALUE + (Double.MAX_VALUE - Double.MIN_VALUE) * rnd.nextDouble()));
-        bValue.setText("" + (Double.MIN_VALUE + (Double.MAX_VALUE - Double.MIN_VALUE) * rnd.nextDouble()));
-        cValue.setText("" + (Double.MIN_VALUE + (Double.MAX_VALUE - Double.MIN_VALUE) * rnd.nextDouble()));
+        // generate random values to the a,b,c text boxes
+        aValue.setText("" + (Float.MIN_VALUE + (Float.MAX_VALUE - Float.MIN_VALUE) * rnd.nextFloat()));
+        bValue.setText("" + (Float.MIN_VALUE + (Float.MAX_VALUE - Float.MIN_VALUE) * rnd.nextFloat()));
+        cValue.setText("" + (Float.MIN_VALUE + (Float.MAX_VALUE - Float.MIN_VALUE) * rnd.nextFloat()));
     }
 }

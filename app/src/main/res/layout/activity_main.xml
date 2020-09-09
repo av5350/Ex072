@@ -148,7 +148,7 @@
             android:id="@+id/shownRoots"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="6"
+            android:layout_weight="7"
             android:gravity="center_horizontal"
             android:text="No solution for now..."
             android:textSize="16sp" />
