@@ -27,8 +27,8 @@ public class SolverActivity extends AppCompatActivity {
         setContentView(R.layout.activity_solver);
 
         shownRoots = (TextView) findViewById(R.id.shownRoots);
-
         wV = (WebView)findViewById(R.id.wV);
+
         wV.getSettings().setJavaScriptEnabled(true);
         wV.setWebViewClient(new MyWebViewClient());
 

@@ -33,12 +33,11 @@ public class MainActivity extends AppCompatActivity {
         aValue = (EditText)findViewById(R.id.aValue);
         bValue = (EditText)findViewById(R.id.bValue);
         cValue = (EditText)findViewById(R.id.cValue);
+        shownRoots = (TextView) findViewById(R.id.shownRoots);
 
         rnd = new Random();
 
         si = new Intent(this, SolverActivity.class);
-
-        shownRoots = (TextView) findViewById(R.id.shownRoots);
     }
 
     public void getValues(View view) {
